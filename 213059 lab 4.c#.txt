@@ -1,0 +1,153 @@
+using System;
+namespace Numbers
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ExploringNumbers();
+        }
+        private static void ExploringNumbers()
+        {
+            Console.WriteLine($"int uses {sizeof(int)}bytes and can store numbers in the range:\n\n + ${int.MinValue:NO} to {int.MaxValue:NO}.\n");
+
+            Console.WriteLine("-----------------------------------------------------------");
+            Console.WriteLine($"int uses {sizeof(double)}bytes and can store numbers in the range:\n\n + ${double.MinValue:NO} to {double.MaxValue:NO}.\n");
+
+            Console.WriteLine("-----------------------------------------------------------");
+            Console.WriteLine($"int uses {sizeof(decimal)}bytes and can store numbers in the range:\n\n + ${decimal.MinValue:NO} to {decimal.MaxValue:NO}.\n");
+
+
+
+        }
+    }
+}
+
+
+   static void Main(string[] args)
+        {
+            ExploringNumbers();
+            AssignLocalVariables();
+        }
+        private static void AssignLocalVariables()
+        {
+            int population = 66_000_000;
+            double weight = 1.90;
+            decimal price = 4.99M;
+            string fruit = "Pineapple";
+            char letters = "m";
+            bool happy = "true";
+        }
+        private static void ExploringNumbers()
+        {
+            Console.WriteLine($"int uses {sizeof(int")}bytes and can store numbers in the range:\n\n + $"{int.MinValue:NO} to {int.MaxValue:NO}.\n");
+                Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine($"double uses {sizeof(double)} bytes and can store numbers in the range:\n\n") + ${ double.MinValue:NO} to { double.MaxValue:NO}.\n");"
+                }
+ 
+
+
+
+
+
+        static void Main()
+        {
+            
+            string a = "Salam";
+            
+            a += "from";
+            a = a + "muzamil";
+            Console.WriteLine(a);
+           
+            object obj;
+            obj = 20;
+            Console.WriteLine(obj);
+            
+            Console.WriteLine(obj.GetType());
+        }
+
+
+
+
+        static void Main()
+        {
+           unsafe
+            {
+
+                int n = 10;
+                // store variable n address location in pointer variable p
+                int* p = &n;
+                Console.WriteLine("Value :{0}", n);
+                Console.WriteLine("Address :{0}", (int)p);
+            }
+        }
+ 
+
+
+
+
+
+
+
+
+        static void Main(string[] args)
+        {
+            CastintDouble();
+        }
+
+        private static void CastintDouble()
+        {
+            int a = 5;
+            double b = a;
+            Console.WriteLine(b);
+            double c = 9.8;
+            int d = (int)c;
+            long x = 9;
+            int f = (int)x;
+            Console.WriteLine($"x is {x} and f is {f}");
+            x = long.MaxValue;
+            f = (int)x;
+            Console.WriteLine($"x is {x} and f is {f}");
+        }
+
+
+ 
+
+
+        static void Main(string[] args)
+        {
+            ConvertToString();
+
+        }
+        private static void ConvertToString()
+        {
+            int number = 12;
+            Console.WriteLine(number.ToString());
+            bool boolean = true;
+            Console.WriteLine(boolean.ToString());
+
+            DateTime now = DateTime.Now;
+            Console.WriteLine(now.ToString());
+
+            object me = new object();
+            Console.WriteLine(me.ToString());
+        }
+  
+
+
+
+        static void Main(string[] args)
+        {
+            ParseToNUmberAndDates();
+
+        }
+        private static void ParseToNUmberAndDates()
+        {
+            int age = int.Parse("27");
+            DateTime birthday = DateTime.Parse("4 july 1980");
+            Console.WriteLine($"I was born {age} years ago.");
+            Console.WriteLine($"My birthday is {birthday} years ago.");
+            Console.WriteLine($"My birthday is {birthday:D} years ago.");
+
+        }
+
